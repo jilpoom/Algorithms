@@ -22,7 +22,6 @@ public class Main {
 
 
     public static long waveSequence(int i){
-       long[] waveArray = new long[100];
        waveSequenceArray[0] = 1L;
        waveSequenceArray[1] = 1L;
        waveSequenceArray[2] = 1L;

@@ -25,7 +25,7 @@ public class Main{
             int s = Integer.parseInt(st.nextToken());
             int e = Integer.parseInt(st.nextToken());
 
-            A[s].add(e);
+            A[s].add(e); // 방향성이 없으므로, 양 쪽 노드에 모두 연결되어 있는 형태
             A[e].add(s);
         }
 

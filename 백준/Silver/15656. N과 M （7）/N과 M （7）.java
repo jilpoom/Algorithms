@@ -8,7 +8,7 @@ public class Main {
      * 2023-01-13
      *
      * @author JY
-     * https://www.acmicpc.net/problem/15654
+     * https://www.acmicpc.net/problem/15656
      */
 
     static int[] arr;

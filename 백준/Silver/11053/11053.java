@@ -1,6 +1,7 @@
 import java.util.Scanner;
  
-public class Main {
+public class Mian {
+	// Ipad	Test
 	
 	static int[] seq;
 	static Integer[] dp;

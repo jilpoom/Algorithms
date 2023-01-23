@@ -1,7 +1,7 @@
 import java.util.Scanner;
  
 public class Mian {
-	// Ipad	Test
+
 	
 	static int[] seq;
 	static Integer[] dp;

@@ -41,6 +41,7 @@ class Solution {
             if(!map.isEmpty() &&
                words[i - 1].charAt(words[i - 1].length() - 1)!= words[i].charAt(0)) 
                 return new int[] {cur, i / n + 1};
+            
             map.put(words[i], 1);
             cur++;
         }

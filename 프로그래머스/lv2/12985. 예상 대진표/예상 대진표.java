@@ -22,6 +22,7 @@ class Solution
         // 대진표에서 a, b 번을 제외한 페어의 승자는 누구든 상관 없다.
         // 단, a, b번 참가자는 항상 다음 라운드로 올라간다.
         
+        /**
         Queue<Pair> queue = new LinkedList<>();
         
         for(int i = 1; i < n; i += 2) { // 대진표 초기화
@@ -51,9 +52,27 @@ class Solution
             round++;
             
         }
+        */
         
         
-        return round++;
+        int answer = 0;
+
+        // a와 b 중 작은 번호가 a가 되도록 설정
+        if (a > b) {
+            int temp = a;
+            a = b;
+            b = temp;
+        }
+
+        // 각 라운드에서 a와 b가 몇 번째 참가자인지 계산
+        while (a != b) {
+            answer++;
+            a = (a + 1) / 2;
+            b = (b + 1) / 2;
+        }
+        
+        
+        return answer;
     }
     
 }

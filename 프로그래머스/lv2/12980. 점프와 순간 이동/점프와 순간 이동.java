@@ -21,8 +21,7 @@ public class Solution {
     */
     
     public int solution(int n) {
-        int ans = 0;
-        // 3. 계획 (메모리 부족)
+        // 3. 계획 (메모리 부족) : 32000000000 bit는 약 3725 MB이다(...)
         // - 입력이 1,000,000,000 이하로 주어 질 수 있으므로 단순 반복문으로 풀 수 없다.
         // - Dynamic Programming 기법을 사용한다.
         // - DP[n] 가 최소 건전지 사용량 일 때,
@@ -41,9 +40,11 @@ public class Solution {
                 DP[i] = DP[i / 2] + 1;
             }
         }
+        return DP[n];
         */
         
-        // 3.계획 비트 수 세기 활용
+        // 3.계획 
+        // - Integer.bitCount() 비트 수 세기 활용 (Population Count)
         
         return Integer.bitCount(n);
     }

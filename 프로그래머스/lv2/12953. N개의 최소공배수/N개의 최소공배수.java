@@ -10,8 +10,9 @@ class Solution {
     public int solution(int[] arr) {
         int answer = 0;
         
-        // 3. 
+        // 3. 계획
         // Stack을 이용한다.
+        // a, b 가 임의의 정수일 때
         // LCM(a, b) * GCD(a, b) = a * b를 만족하므로
         // 모든 원소를 stack에 넣고, 두 원소를 pop()하고 해당 수의 최소 공배수를 push()하며 반복한다.
         // 마지막 원소가 남을 때까지 반복한다.

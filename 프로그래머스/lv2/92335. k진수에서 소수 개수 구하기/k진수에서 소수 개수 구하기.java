@@ -19,18 +19,12 @@ class Solution {
         // 3. 계획
         // - n을 k진수로 변환한 문자열을 만든다.
         String kStr = k != 10 ? parseWithRadix(n, k) : String.valueOf(n);
-        System.out.println(kStr);
         kStr = kStr.contains("00") ? kStr.replaceAll("[0]{2,}", "0") : kStr;
-        System.out.println(kStr);
         
         int answer = 0;
-        System.out.println("isPrime");
-        for(String s : kStr.split("0")) {
-            System.out.print(s + " ");
-            
+        for(String s : kStr.split("0")) {            
             if(!s.equals("") && isPrime(Long.parseLong(s))) answer++;
         }
-        
         return answer;
     }
     

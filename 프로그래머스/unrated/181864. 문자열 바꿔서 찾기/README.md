@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 71.1 MB, 시간: 1.50 ms
+메모리: 75.6 MB, 시간: 1.73 ms
 
 ### 구분
 
@@ -23,8 +23,8 @@ Empty
 <h5>제한사항</h5>
 
 <ul>
-<li>1 ≤ <code>myString</code> ≤ 100</li>
-<li>1 ≤ <code>pat</code> ≤ 10
+<li>1 ≤ <code>myString</code>의 길이 ≤ 100</li>
+<li>1 ≤ <code>pat</code>의 길이 ≤ 10
 
 <ul>
 <li><code>myString</code>과 <code>pat</code>는 문자 "A"와 "B"로만 이루어진 문자열입니다.</li>
@@ -68,6 +68,8 @@ Empty
 <ul>
 <li>"ABAB"에서 "A"와 "B"를 서로 바꾸면 "BABA"입니다. 여기에는 부분문자열 "BABA"가 없기 때문에 0을 return 합니다.</li>
 </ul>
+
+<p>※ 2023년 05월 15일 제한사항 및 테스트 케이스가 수정되었습니다. 기존에 제출한 코드가 통과하지 못할 수 있습니다.</p>
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges

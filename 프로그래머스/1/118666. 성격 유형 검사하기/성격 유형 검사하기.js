@@ -6,7 +6,6 @@ function solution(survey, choices) {
         'AN': 0,
     }
     
-    
     survey.forEach((q, index) => {
         let p;
         let is_reverse = false;
@@ -25,7 +24,6 @@ function solution(survey, choices) {
         
         indicates[q] += score;
      })
-    console.log(indicates);
     
     let answer = Object.keys(indicates).reduce((acc, cur) => {
         let indicate = indicates[cur] > 0 ? cur[1] : cur[0]

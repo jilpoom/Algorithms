@@ -2,8 +2,6 @@ function solution(friends, gifts) {
     const table = getPresentRSTable(friends, gifts);
     const score_map = getPresentScoreMap(friends, table);
     const next_month_present = getNextMonthPresentList(friends, table, score_map);
-    console.log(next_month_present);
-    
     
     return next_month_present.reduce((acc, next) => Math.max(acc, next), 0)
 }
